@@ -1,0 +1,20 @@
+{"question": "星辰 X1 Pro 多少钱？", "expected_keywords": ["4299"], "reference": "星辰 X1 Pro 12GB+256GB 售价 4299 元，16GB+512GB 售价 4799 元。"}
+{"question": "星辰 X1 Pro 的电池容量和充电功率是多少？", "expected_keywords": ["5000mAh", "80W"], "reference": "星辰 X1 Pro 电池 5000mAh，支持 80W 有线快充和 50W 无线快充。"}
+{"question": "星辰 X1 和 X1 Pro 有什么区别？", "expected_keywords": ["天玑", "骁龙"], "reference": "X1 使用天玑 9300，X1 Pro 使用骁龙 8 Gen3；屏幕、充电和影像配置也不同。"}
+{"question": "星辰 X1 Lite 多少钱？", "expected_keywords": ["1999"], "reference": "星辰 X1 Lite 售价 1999 元起。"}
+{"question": "星辰手机主机保修多久？", "expected_keywords": ["1 年", "保修"], "reference": "星辰手机主机享受 1 年保修。"}
+{"question": "电池和充电器保修多久？", "expected_keywords": ["6 个月"], "reference": "电池、充电器等附件享受 6 个月保修。"}
+{"question": "七天无理由退货需要满足什么条件？", "expected_keywords": ["7 天", "完好"], "reference": "签收后 7 天内，商品完好、配件齐全、不影响二次销售可申请无理由退货。"}
+{"question": "十五天换货需要什么条件？", "expected_keywords": ["15 天", "性能故障"], "reference": "签收后 15 天内出现非人为性能故障，检测确认后可换货。"}
+{"question": "退款多久能到账？", "expected_keywords": ["1-3 个工作日"], "reference": "退货验收通过后 1-3 个工作日原路退回。"}
+{"question": "无理由退货的运费由谁承担？", "expected_keywords": ["买家"], "reference": "无理由退货的退回运费由买家承担。"}
+{"question": "支持哪些支付方式？", "expected_keywords": ["微信", "支付宝"], "reference": "支持微信支付、支付宝、银联银行卡、花呗分期和信用卡分期。"}
+{"question": "花呗分期支持几期？", "expected_keywords": ["3 期", "12 期"], "reference": "花呗分期支持 3 期、6 期、12 期。"}
+{"question": "可以开什么类型的发票？", "expected_keywords": ["电子普通发票", "增值税专用发票"], "reference": "支持电子普通发票和增值税专用发票。"}
+{"question": "现货商品多久发货？", "expected_keywords": ["48 小时"], "reference": "现货商品付款后 48 小时内发货。"}
+{"question": "双十一星辰 X1 Pro 有什么优惠？", "expected_keywords": ["满 4000 减 300"], "reference": "双十一抢先购：星辰 X1 Pro 满 4000 减 300。"}
+{"question": "以旧换新怎么操作？", "expected_keywords": ["抵扣", "旧机"], "reference": "下单选择以旧换新，填写旧机信息，检测后按预估金额抵扣。"}
+{"question": "星辰 X1 Pro 防水吗？", "expected_keywords": ["IP68"], "reference": "星辰 X1 Pro 支持 IP68 防尘防水。"}
+{"question": "包装清单包含哪些东西？", "expected_keywords": ["充电器", "数据线"], "reference": "包装含手机、充电器、数据线、取卡针、保护壳和入门指南。"}
+{"question": "价格保护期限是多久？", "expected_keywords": ["15 天"], "reference": "下单后 15 天内同商品降价可申请价格保护。"}
+{"question": "售后申请入口在哪里？", "expected_keywords": ["我的订单", "申请售后"], "reference": "在“我的订单”中选择订单，点击“申请售后”提交。"}

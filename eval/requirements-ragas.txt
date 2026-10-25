@@ -1,0 +1,6 @@
+# Optional RAGAS evaluation dependencies.
+# RAGAS APIs change frequently; pin a version that works in your environment.
+ragas>=0.2,<0.4
+datasets>=2.20
+langchain-openai>=1.0
+pandas>=2.2
