@@ -2,7 +2,7 @@
 In-process vector + BM25 index per knowledge base.
 
 The index is rebuilt lazily from SQLite when a KB version changes. For a
-graduation-project scale corpus (tens of thousands of child chunks) a single
+single-node scale corpus (tens of thousands of child chunks) a single
 normalized numpy matrix gives millisecond cosine search, and rank_bm25 provides
 Chinese keyword retrieval after jieba tokenization. The public methods mirror
 what a pgvector/hybrid retriever would expose.

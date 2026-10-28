@@ -11,6 +11,9 @@ coverage/
 .env.local
 data/
 !data/.gitkeep
+data_stress/
+stress/results/
+stress/tokens.json
 frontend/node_modules/
 frontend/dist/
 *.log
@@ -18,4 +21,5 @@ frontend/dist/
 .idea/
 .vscode/
 .qoder/
+.zcode/
 *.egg-info/

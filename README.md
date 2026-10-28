@@ -310,6 +310,25 @@ backend/.venv/Scripts/python.exe eval/run_eval.py
 
 明细见 `eval/results.csv`（真实模式）与 `eval/results_mock.csv`（离线模式）。
 
+### 压力测试（100 并发）
+
+使用 Locust 模拟 100 人同时使用（隔离 `data_stress/` 环境 + `LLM_MODE=mock`，不触碰演示库、不产生模型费用）：
+
+```bat
+stress\run_stress.bat pilot   REM 5 并发 1 分钟试跑
+stress\run_stress.bat full    REM S1/S2 各 10 分钟 + S3 阶梯加压
+```
+
+核心结论（详见 [stress/STRESS-REPORT.md](stress/STRESS-REPORT.md)）：
+
+| 场景 | 结果 |
+|---|---|
+| S1 稳态 100 并发纯问答 10min | 24,376 次问答 / 40.65 req/s，**0 失败**，完整回答 P50 85ms / P95 1.9s |
+| S2 混合负载 100 并发 10min | 48,037 请求 / 80.2 RPS，**0 失败**，聚合 P95 2.4s |
+| S3 阶梯 10→30→60→100 | 60 并发内 P95 <200ms；100 并发 P95 1.1s（软拐点），仍 0 错误 |
+
+语义缓存命中率 99.96%（热点问题近零成本）、SQLite 锁错误 0、内存稳定无泄漏。
+
 > 评测集为 20 条商品 FAQ / 售后 / 促销问题，采用“关键词命中 + 引用存在”作为轻量指标，不代表完整语义质量；论文中建议补充 RAGAS 的 Faithfulness / Context Recall / Answer Relevancy，并对比“纯向量 / 混合检索 / 混合+重排 / +查询改写”四组配置。
 
 ### RAGAS 评测（可选）
